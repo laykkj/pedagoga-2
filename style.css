@@ -7,6 +7,7 @@
     transition: 0.5s;
     -webkit-user-drag: none;
     user-select: none;
+    text-decoration: none;
 }
 
 body{
@@ -18,8 +19,13 @@ body{
 
 /* HEADER */
 header{
-    background: #feffbc;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(216, 215, 215, 0.932);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 /* NAVBAR */
@@ -27,12 +33,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 5%;
-}
-
-nav a{
-    text-decoration: none;
-    font-weight: 600;
+    padding: 12px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* LOGO */
@@ -43,38 +46,40 @@ nav a{
 }
 
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: url(./logo/4134175-removebg-preview.png) center/contain no-repeat;
 }
 
 .h1peda{
-    font-size: 1.6rem;
-    color: #d65a5a;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    font-weight: bold;
 }
 
-/* MENU CENTRAL */
+/* MENU */
 .adiv{
     display: flex;
     gap: 2rem;
 }
 
 .adiv a{
-    color: #444;
-    font-size: 1rem;
+    color: #333;
+    font-size: 0.95rem;
     position: relative;
+    transition: 0.3s;
 }
 
-/* hover bonito */
+/* hover linha animada */
 .adiv a::after{
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    bottom: -5px;
+    bottom: -6px;
     left: 0;
     background: #ff6b6b;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .adiv a:hover{
@@ -85,32 +90,39 @@ nav a{
     width: 100%;
 }
 
-/* LADO DIREITO */
+/* DIREITA */
 .container-esquerda{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
-/* BOTÃO AGENDAR */
-.anavbar a{
-    background: #ff6b6b;
+/* BOTÃO */
+.anavbar{
+    background: linear-gradient(135deg, #ff6b6b, #ff4d4d);
     color: white;
     padding: 10px 18px;
-    border-radius: 8px;
+    border-radius: 999px;
     font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
 }
 
-.anavbar a:hover{
-    background: #ff4d4d;
+.anavbar:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 77, 77, 0.5);
 }
 
 /* MENU ICON */
 .imgmenu{
-    width: 40px;
+    width: 35px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.imgmenu:hover{
+    transform: scale(1.1);
+}
 /* MAIN */
 main{
     flex: 1;
@@ -119,7 +131,7 @@ main{
 /* HERO (FUNDO) */
 .section-container{
     position: relative;
-    height: calc(100vh - 90px);
+    height: 92.3vh;
     background: url(background/book-with-green-board-background-scaled.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -170,114 +182,92 @@ main{
     background: #ff4d4d;
 }
 
-/* ========================= */
-/* TABLET */
-@media (max-width: 1024px){
-
-    .adiv{
-        gap: 1.2rem;
-    }
-
-    .adiv a{
-        font-size: 0.9rem;
-    }
-
-    .h1peda{
-        font-size: 1.3rem;
-    }
-
-    .logo{
-        width: 50px;
-        height: 50px;
-    }
-
-    .container h2{
-        font-size: 2rem;
-    }
+.section-container {
+    width: 100%;
+    padding: 60px 10%;
+    background: #0f172a; /* fundo moderno escuro */
 }
 
-/* ========================= */
-/* CELULAR */
-@media (max-width: 768px){
+.active-div-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 60vh;
+    margin: auto;
+}
 
-    /* NAVBAR VIRA COLUNA */
-    nav{
+/* IMAGEM */
+.image-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#imgpedagoga {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* TEXTO */
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container h2 {
+    font-size: 2.2rem;
+    color: #38bdf8;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.container p {
+    color: #cbd5f5;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* BOTÃO */
+.container button {
+    width: fit-content;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+}
+
+@media (max-width: 768px) {
+    .active-div-main {
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .header-logo{
-        justify-content: center;
-    }
-
-    /* MENU QUEBRA LINHA */
-    .adiv{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .adiv a{
-        font-size: 0.9rem;
-    }
-
-    /* BOTÃO + MENU */
-    .container-esquerda{
-        justify-content: center;
-    }
-
-    .anavbar a{
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    .imgmenu{
-        width: 35px;
-    }
-
-    /* HERO */
-    .section-container{
-        height: auto;
-        padding: 40px 20px;
         text-align: center;
-        justify-content: center;
     }
 
-    .container{
-        max-width: 100%;
-    }
-
-    .container h2{
-        font-size: 1.8rem;
-    }
-
-    .container p{
-        font-size: 0.95rem;
-    }
-
-    .container button{
+    .image-active,
+    .container {
         width: 100%;
     }
-}
 
-/* ========================= */
-/* CELULAR PEQUENO */
-@media (max-width: 480px){
-
-    .h1peda{
-        font-size: 1.1rem;
+    #imgpedagoga {
+        max-height: 300px;
     }
 
-    .adiv a{
-        font-size: 0.8rem;
-    }
-
-    .container h2{
-        font-size: 1.5rem;
-    }
-
-    .container p{
-        font-size: 0.9rem;
+    .container button {
+        margin: 0 auto;
     }
 }
