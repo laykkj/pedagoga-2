@@ -1,0 +1,283 @@
+/* RESET LIMPO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: 0.5s;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #000000;
+}
+
+/* HEADER */
+header{
+    background: #feffbc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* LOGO */
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    background: url(./logo/4134175-removebg-preview.png) center/contain no-repeat;
+}
+
+.h1peda{
+    font-size: 1.6rem;
+    color: #d65a5a;
+}
+
+/* MENU CENTRAL */
+.adiv{
+    display: flex;
+    gap: 2rem;
+}
+
+.adiv a{
+    color: #444;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* hover bonito */
+.adiv a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #ff6b6b;
+    transition: 0.3s;
+}
+
+.adiv a:hover{
+    color: #ff6b6b;
+}
+
+.adiv a:hover::after{
+    width: 100%;
+}
+
+/* LADO DIREITO */
+.container-esquerda{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BOTÃO AGENDAR */
+.anavbar a{
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.anavbar a:hover{
+    background: #ff4d4d;
+}
+
+/* MENU ICON */
+.imgmenu{
+    width: 40px;
+    cursor: pointer;
+}
+
+/* MAIN */
+main{
+    flex: 1;
+}
+
+/* HERO (FUNDO) */
+.section-container{
+    position: relative;
+    height: calc(100vh - 90px);
+    background: url(background/book-with-green-board-background-scaled.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    filter: opacity(50%);
+}
+
+/* overlay (ESSENCIAL) */
+.section-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* CONTEÚDO */
+.active-div-main{
+    position: relative;
+}
+
+.container{
+    max-width: 500px;
+}
+
+/* TEXTOS */
+.container h2{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container p{
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* BOTÃO */
+.container button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background: #ff4d4d;
+}
+
+/* ========================= */
+/* TABLET */
+@media (max-width: 1024px){
+
+    .adiv{
+        gap: 1.2rem;
+    }
+
+    .adiv a{
+        font-size: 0.9rem;
+    }
+
+    .h1peda{
+        font-size: 1.3rem;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .container h2{
+        font-size: 2rem;
+    }
+}
+
+/* ========================= */
+/* CELULAR */
+@media (max-width: 768px){
+
+    /* NAVBAR VIRA COLUNA */
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-logo{
+        justify-content: center;
+    }
+
+    /* MENU QUEBRA LINHA */
+    .adiv{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .adiv a{
+        font-size: 0.9rem;
+    }
+
+    /* BOTÃO + MENU */
+    .container-esquerda{
+        justify-content: center;
+    }
+
+    .anavbar a{
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .imgmenu{
+        width: 35px;
+    }
+
+    /* HERO */
+    .section-container{
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .container h2{
+        font-size: 1.8rem;
+    }
+
+    .container p{
+        font-size: 0.95rem;
+    }
+
+    .container button{
+        width: 100%;
+    }
+}
+
+/* ========================= */
+/* CELULAR PEQUENO */
+@media (max-width: 480px){
+
+    .h1peda{
+        font-size: 1.1rem;
+    }
+
+    .adiv a{
+        font-size: 0.8rem;
+    }
+
+    .container h2{
+        font-size: 1.5rem;
+    }
+
+    .container p{
+        font-size: 0.9rem;
+    }
+}
