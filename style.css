@@ -41,10 +41,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 14px 2%;
-  width: 100%;        /* ocupa tudo */
-  margin: 0;          /* remove centralização */
+  width: 100%;        
+  margin: 0;          
 }
-/* LOGO */
+
 .header-logo {
   display: flex;
   align-items: center;
@@ -59,17 +59,16 @@ nav {
 
 .h1peda {
   font-size: 1.6rem;
-  color: #fa0000;
+  color: #b90303;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
-/* MENU */
 .adiv {
   display: flex;
   gap: 2.5rem;
   margin-left: auto;
-  margin-right: 30px; /* empurra pra direita */
+  margin-right: 30px; 
   text-transform: capitalize;
 }
 
@@ -80,7 +79,6 @@ nav {
   transition: 0.3s;
 }
 
-/* hover linha animada */
 .adiv a::after {
   content: "";
   position: absolute;
@@ -100,13 +98,11 @@ nav {
   width: 100%;
 }
 
-/* DIREITA */
 .right {
   display: flex;
   align-items: center;
 }
 
-/* BOTÃO */
 .anavbar {
   background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
   color: white;
@@ -128,48 +124,198 @@ nav {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
-
 }
 
-/* MAIN */
 main {
   flex: 1;
 }
 
-/* HERO (FUNDO) */
 .section-container {
   min-height: calc(100vh - 79px);
   display: flex;
-  padding: 0 1%;
-  background-color: #ecebb7;
+  padding: 4% 4%;
+  background: #7a1b1b;
+  background: linear-gradient(146deg,rgba(122, 27, 27, 1) 0%, rgba(18, 2, 2, 1) 0%, rgba(5, 5, 5, 1) 100%, rgba(0, 0, 0, 1) 100%);
+  padding-top: 4%;
+  justify-content: space-between;
+  gap: 10%;
 }
 
-/* overlay (ESSENCIAL) */
 .section-container::before {
   content: "";
   position: absolute;
   inset: 0;
+  
+}
+.p-div{
+  display: inline-block;
+  margin-bottom: 1%;
+}
+
+.p-div p{
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+
+.p-div span{
+  color: red;
+}
+
+.principle-titles{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subtitle p:first-of-type{
+  font-size: 2rem;
+  color: #b90303;
+
+}
+
+.principle-titles h1{
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(124, 0, 0); /* cursor */
+  animation: typing 1.5s steps(16), blink 0.7s infinite;
+  font-size: 5.5rem;
+  max-width: 93%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .main-div-texts{
+  width: 50%;
+  height: fit-content;
+  position: relative;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.main-div-texts > * {
+  padding: 10px 10px;
+  color: white;
+}
+
+.main-div-texts #p-id{
+  font-size: 1rem;
   
 }
 
+:root {
+  --main-color: red;
+  --width: 100px;
+  --height: 40px;
+}
 
+.buttons {
+  display: flex;
+  gap: 5%; 
+  margin-top: 2%;
+}
+
+.buttons button {
+  border: none;
+  background: none; 
+  padding: 0;
+  cursor: pointer;
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+.two-title-buttons{
+  display: flex;
+  width: 50%;
+  padding: 10px 10px;
+  height: 15vh;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+.two-title-buttons a{
+  background-color: red;
+  height: fit-content;
+  padding: 20px 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+  border-radius: 10%;
+  max-width: 100%;
+}
+
+.two-title-buttons a:nth-child(2){
+  background-color: transparent;
+  border: 2px red solid;
+}
+
+.two-title-buttons a:hover{
+  box-shadow: 0 10px 25px rgba(95, 3, 3, 0.5);
+}
+
+.seta-home{
+  position: absolute;
+  height: fit-content;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .button-click-scroll{
     width: 50px;
     height: 50px;
-    background-image: url(imagens/318474-removebg-preview.png);
+    background-image: url(imagens/seta.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transform: rotate(90deg);    
+    transform: rotate(-90deg);
 }
 
+.button-click-scroll:hover{
+    filter: drop-shadow(0 0 19px rgba(85, 10, 10, 0.8));
+    background-color: transparent;
+    transition: 0.2s;
+  }
+
+.main-div-photo {
+  position: relative;
+  width: clamp(280px, 35vw, 450px); 
+  height: clamp(280px, 35vw, 450px);
+  border-radius: 50%;
+  overflow: hidden; 
+  box-shadow: 0 0 30px rgba(88, 4, 4, 0.4), 
+              0 0 60px rgba(255, 0, 0, 0.2);  
+  margin-top: 10vh; 
+}
+
+.main-div-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 768px) {
   .active-div-main {
