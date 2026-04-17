@@ -11,6 +11,7 @@
   font-family: Nexa;
   -webkit-user-drag: none;
   text-decoration: none;
+  user-select: none;
 }
 
 body {
@@ -49,6 +50,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-left: 2.5%;
 }
 
 .logo {
@@ -116,8 +118,8 @@ nav {
 
 .anavbar:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(253, 3, 3, 0.5);
-  color: wheat;
+  box-shadow: 0 5px 15px rgba(253, 3, 3, 0.5);
+  color: rgb(255, 209, 2);
 }
 
 .anavbar a{
@@ -172,15 +174,27 @@ main {
   color: #b90303;
 
 }
-
 .principle-titles h1{
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid rgb(124, 0, 0); /* cursor */
-  animation: typing 1.5s steps(16), blink 0.7s infinite;
   font-size: 5.5rem;
   max-width: 93%;
+}
+
+.typing{
+  font-size: 5.5rem;
+  color: white;
+  border-right: 3px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  min-height: 1.5em;
+  line-height: 1.5;
+  border-right: 3px solid red;
+  width: fit-content;
+  animation: blink 1s infinite;
 }
 
 @keyframes typing {
@@ -292,12 +306,12 @@ main {
     border: none;
     cursor: pointer;
     transform: rotate(-90deg);
+    transition: filter 0.4s ease-out, transform 0.4s ease-out;
 }
 
 .button-click-scroll:hover{
     filter: drop-shadow(0 0 19px rgba(85, 10, 10, 0.8));
     background-color: transparent;
-    transition: 0.2s;
   }
 
 .main-div-photo {
