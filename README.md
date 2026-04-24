@@ -1,1 +1,1 @@
-Site pedagoga, projeto em andamento que será completado em cerca de dois meses.
+site de uso pessoal, direitos reservados. 
