@@ -7,158 +7,199 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="header-logo">
-          <h1 class="h1peda"><strong>Psicopedagoga</strong></h1>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar_brand">
+          <h1 class="navbar_logo"><strong>Psicopedagoga</strong></h1>
         </div>
 
-        <div class="right">
-          <div class="adiv">
-            <a href="#" class="scroll-link">início</a>
-            <a
-              href="#page-2-container"
-              class="scroll-link"
-              onclick="return false;"
-              >sobre mim</a
-            >
-            <a href="#" class="">trabalhos</a>
-            <a href="#" class="">feedbacks</a>
-            <a href="#" class="">contatos</a>
+        <div class="navbar_actions">
+          <div class="navbar_links">
+            <a href="#hero" class="scroll-link">início</a>
+            <a href="#about-me">sobre mim</a>
+            <a href="#page-3-container" class="">trabalhos</a>
+            <a href="#feedbacks" class="">feedbacks</a>
+            <a href="#Contacts" class="">contatos</a>
           </div>
-          <a class="anavbar" href="#">Agendar já!</a>
+          <a class="navbar_cta" href="#">Agendar já!</a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section class="section-container">
-        <div class="main-div-texts">
-          <div class="p-div">
-            <p>Olá, <span class="">eu sou...</span></p>
+    <!--Inicio da página inicial, com o main inciando daqui até o footer.-->
+
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="hero_content">
+          <div class="hero_intro">
+            <p>Olá, <span>eu sou...</span></p>
           </div>
-          <div class="principle-titles">
-            <h1 class="typing">Pedagoga Infantil</h1>
-            <div class="subtitle">
+
+          <div class="hero_heading">
+            <h1 class="hero_title typing">Pedagoga Infantil</h1>
+
+            <div class="hero_subtitle">
               <p>Educação infantil, fundamental, EJA, gestão escolar.</p>
             </div>
           </div>
 
-          <p id="p-id">
-            Sou pedagoga e acredito que a educação é um processo contínuo de
-            construção, que vai muito além da sala de aula. Meu trabalho é
-            pautado no respeito a coletividade, no incentivo ao desenvolvimento
-            integral do aluno e na valorização das diferentes formas de
-            aprender.
+          <p class="hero_description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur blanditiis reprehenderit corrupti excepturi temporibus
+            cumque optio quod earum doloremque, aut esse expedita odit molestias
+            quam aliquid? Quam maxime deleniti sint?
           </p>
 
-          <div class="info-mentions">
-            <div class="mention-card">
-              <div class="img-infomentions">
+          <div class="hero_features">
+
+            <div class="feature_card">
+              <div class="feature_icon">
                 <img src="imagens/heart.png" alt="" />
               </div>
-
-              <div class="div-grid-page1">
+              <div class="feature_content">
                 <h4>Acolhimento</h4>
                 <p>Escuta ativa em cada etapa</p>
               </div>
+              <div class="feature-line"></div>
             </div>
 
-            <hr />
-
-            <div class="mention-card">
-              <div class="img-infomentions">
+            <div class="feature_card">
+              <div class="feature_icon">
                 <img src="imagens/Brains.png" alt="" />
               </div>
-
-              <div class="div-grid-page1">
-                <h4>Desenvolvimento</h4>
+              <div class="feature_content">
+                <h4>Análise</h4>
                 <p>Acompanhamento individual</p>
               </div>
+              <div class="feature-line"></div>
             </div>
 
-            <hr />
 
-            <div class="mention-card">
-              <div class="img-infomentions">
+            <div class="feature_card">
+              <div class="feature_icon">
                 <img src="imagens/book.png" alt="" />
               </div>
-
-              <div class="div-grid-page1">
+              <div class="feature_content">
                 <h4>Inclusão</h4>
                 <p>Respeito às individualidades</p>
               </div>
+              <div class="feature-line"></div>
             </div>
 
-            <hr>
-            
-            <div class="mention-card">
-              <div class="img-infomentions">
+            <div class="feature_card">
+              <div class="feature_icon">
                 <img src="imagens/star.png" alt="" />
               </div>
-              
-
-              <div class="div-grid-page1">
+              <div class="feature_content">
                 <h4>Resultados</h4>
-                <p>Educação que gera impacto e futuro.</p>
+                <p>Educação que gera impacto</p>
               </div>
             </div>
-
           </div>
-          <div class="buttons">
-            <button id="reddit">
-              <img src="imagens/reddit.png" alt="Face" />
+
+          <div class="social_links">
+            <button class="social_button">
+              <img src="imagens/reddit.png" alt="Reddit" />
             </button>
-            <button id="twitter">
+
+            <button class="social_button">
               <img src="imagens/twitter.png" alt="Twitter" />
             </button>
-            <button id="instagram">
-              <img src="imagens/insta.png" alt="Insta" />
+
+            <button class="social_button">
+              <img src="imagens/insta.png" alt="Instagram" />
             </button>
-            <button id="whatsapp">
-              <img src="imagens/whatsapp.png" alt="Whats" />
+
+            <button class="social_button">
+              <img src="imagens/whatsapp.png" alt="WhatsApp" />
             </button>
           </div>
 
-          <div class="two-title-buttons">
+          <div class="hero_actions">
             <a href="">SOBRE MIM</a>
             <a href="">FEEDBACKS</a>
           </div>
         </div>
 
-        <div class="main-div-photo">
+        <div class="hero_image">
           <img src="imagens/pedagoga.jpeg" alt="pedagoga" />
         </div>
       </section>
-      <section id="page-2-container">
-        <div class="big-container">
-          <div class="img-container-page2">
-            <img src="imagens/pedagoga.jpeg" alt="" />
-          </div>
-          <div class="texts-page2">
-            <h1>SOBRE <span>MIM</span></h1>
-            <p>
-              Sou psicopedagoga dedicada ao desenvolvimento integral do
-              indivíduo, com olhar sensível e atento às singularidades de cada
-              pessoa. Minha atuação é pautada na compreensão de que o processo
-              de aprendizagem vai além do conteúdo acadêmico, envolvendo
-              aspectos emocionais, sociais e cognitivos. Busco identificar
-              dificuldades e potencialidades, criando estratégias personalizadas
-              que favoreçam o aprendizado de forma significativa e acolhedora.
-              Valorizo a escuta ativa, o vínculo de confiança e o respeito ao
-              ritmo de cada sujeito, acreditando que todos são capazes de
-              aprender quando estimulados de maneira adequada.
-            </p>
 
-            <div class="align-inline-display">
-              <a href="">Profissionalidade</a>
-              <a href="">Dedicação</a>
-              <a href="">Atendimento rápido</a>
-              <a href="">Laudo</a>
+      <hr class="separtion-line">
+
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-heading">
+
+            <span class="section-tag">SOBRE MIM</span>
+            <h1>Educar é transformar vidas e construir futuros.</h1>
+            <div class="line"></div>
+            <p>
+              Sou pedagoga com atuação dedicada à educação infantil, ensino
+              fundamental, EJA e gestão escolar.
+            </p>
+            <p>
+              Acredito em uma educação humanizada, inclusiva e transformadora,
+              que respeita o tempo e o potencial de cada indivíduo.
+            </p>
+            <div class="mission-card">
+              <div class="mission-icon">
+                <img src="" alt="Ícone missão" />
+              </div>
+              <div class="mission-text">
+                <h3>Minha missão</h3>
+                <p>
+                  Promover aprendizagens significativas que incentivem
+                  autonomia, empatia e cidadania.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="principles-container">
+            <span class="section-tag"> MEUS PRINCÍPIOS </span>
+
+            <div class="principle-item">
+              <img src="imagens/page2-heart.png" alt="Ícone respeito" />
+              <div>
+                <h3>Respeito</h3>
+                <p>
+                  Acolho cada indivíduo em sua história, tempo e singularidade.
+                </p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <img src="imagens/quebracabeças.png" alt="Ícone aprendizagem" />
+              <div>
+                <h3>Aprendizagem</h3>
+                <p>
+                  Estímulo o conhecimento de forma significativa e humanizada.
+                </p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <img src="imagens/empatia.png" alt="Ícone empatia" />
+              <div>
+                <h3>Empatia</h3>
+                <p>Promovo relações de cuidado, escuta e compreensão para todos.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <img src="imagens/transformação.png" alt="Ícone transformação" />
+              <div>
+                <h3>Transformação</h3>
+                <p>Acredito na educação como ferramenta de mudança social.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <hr class="separtion-line">
 
       <section class="page-3-section" id="page-3-container">
         <div class="page-3-title">
@@ -192,6 +233,8 @@
         </div>
       </section>
 
+      <hr class="separtion-line">
+
       <section id="feedbacks" class="feedback-section">
         <h2>Feedbacks</h2>
 
@@ -216,10 +259,12 @@
       <section id="contato" class="contact-section">
         <h2>Entre em contato</h2>
         <p>Agende uma consulta ou tire dúvidas diretamente pelo WhatsApp.</p>
-
         <a href="#" class="contact-btn">Chamar no WhatsApp</a>
       </section>
     </main>
+
+    <hr class="separtion-line">
+
     <footer>
       <p>© 2026 Lidiane Psicopedagoga • Todos os direitos reservados</p>
     </footer>

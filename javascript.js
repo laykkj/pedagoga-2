@@ -14,8 +14,6 @@ if (el) {
 
       if (charIndex > current.length) {
         deleting = true;
-
-        // só pausa se for Psicopedagoga
         const delay = current === "Psicopedagoga" ? 8200 : 8200;
         setTimeout(type, delay);
         return;
@@ -36,19 +34,35 @@ if (el) {
   type();
 }
 
-document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', (e) => {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const href = link.getAttribute('href');
-    if (!href || href === "#") return;
+    const target = document.querySelector(this.getAttribute('href'));
+    const start = window.pageYOffset;
+    const end = target.offsetTop;
+    const distance = end - start;
+    const duration = 800;
+    let startTime = null;
 
-    const target = document.querySelector(href);
-    if (!target) return;
+    function animation(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
 
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+      window.scrollTo(0, start + distance * easeInOutCubic(progress));
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    function easeInOutCubic(t) {
+      return t < 0.5
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    requestAnimationFrame(animation);
   });
 });
