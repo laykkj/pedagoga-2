@@ -932,47 +932,10 @@ main {
     padding: 80px 0;
     position: relative;
     overflow: hidden;
-    background:
-    linear-gradient(
-        135deg,
-        #f8b500 0%,
-        #f6d3a7 35%,
-        #f8c7c0 65%,
-        #ff8fa3 100%
-    );
     gap: 5em;
-}
-
-.feedback-section::before{
-    content: "";
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 220px;
-    height: 220px;
-    background-image:
-    radial-gradient(
-        rgba(255,255,255,0.7) 2px,
-        transparent 2px
-    );
-    background-size: 22px 22px;
-    opacity: .7;
-}
-
-.feedback-section::after{
-    content: "";
-    position: absolute;
-    bottom: 60px;
-    right: 60px;
-    width: 170px;
-    height: 170px;
-    background-image:
-    radial-gradient(
-        rgba(255,255,255,0.7) 2px,
-        transparent 2px
-    );
-    background-size: 22px 22px;
-    opacity: .7;
+    background-image: url(background/page4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .feedback-heading{
@@ -1200,6 +1163,45 @@ main {
 
 /* ================= RESPONSIVIDADE ================= */
 
+@media (max-width: 1000px){
+
+  #about-me{
+   flex-direction: column;
+  }
+
+  .about-me-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    gap: 20px;
+  }
+
+  .about-me-heading{
+    min-width: 100%;
+  }
+
+  .about-me-heading h1{
+    font-size: 2.5rem;
+  }
+
+  .about-me-heading p{
+    font-size: 1.3rem;
+  }
+
+  .principles-container{
+    min-width: 100%;
+  }
+
+  .principles-container .section-tag{
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+}
+
 @media (max-width: 1400px){
 
   .feedback-cards-container{
@@ -1216,6 +1218,12 @@ main {
     font-size: 1.2rem;
   }
 
+}
+
+@media (max-width: 1034px){
+  .feedback-section{
+    background-image: none;
+  }
 }
 
 @media (max-width: 992px){
@@ -1267,6 +1275,8 @@ main {
   }
 
 }
+
+
 
 @media (max-width: 768px){
 
@@ -1358,6 +1368,8 @@ main {
 
   .feedback-section{
     padding: 50px 12px;
+    background-image: none;
+    
   }
 
   .feedback-title{
@@ -1663,8 +1675,6 @@ main {
     width: 260px;
     margin-bottom: 0;
   }
-
-  /* navbar */
 
   nav {
     flex-direction: column;
