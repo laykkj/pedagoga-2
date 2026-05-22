@@ -1,273 +1,501 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lidiane Pedagoga</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar_brand">
-          <h1 class="navbar_logo"><strong>Psicopedagoga</strong></h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lidiane Pedagoga</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar_brand">
+        <h1 class="navbar_logo"><strong>Psicopedagoga</strong></h1>
+      </div>
+
+      <div class="navbar_actions">
+        <div class="navbar_links">
+          <a href="#hero" class="scroll-link">início</a>
+          <a href="#about-me">sobre mim</a>
+          <a href="#works" class="">trabalhos</a>
+          <a href="#feedbacks" class="">feedbacks</a>
+          <a href="#Contacts" class="">contatos</a>
+        </div>
+        <a class="navbar_cta" href="#">Agendar já!</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Inicio da página inicial, com o main inciando daqui até o footer.-->
+
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="hero_content">
+        <div class="hero_intro">
+          <p>Olá, <span>eu sou...</span></p>
         </div>
 
-        <div class="navbar_actions">
-          <div class="navbar_links">
-            <a href="#hero" class="scroll-link">início</a>
-            <a href="#about-me">sobre mim</a>
-            <a href="#page-3-container" class="">trabalhos</a>
-            <a href="#feedbacks" class="">feedbacks</a>
-            <a href="#Contacts" class="">contatos</a>
+        <div class="hero_heading">
+          <h1 class="hero_title typing">Pedagoga Infantil</h1>
+
+          <div class="hero_subtitle">
+            <p>Educação infantil, fundamental, EJA, gestão escolar.</p>
           </div>
-          <a class="navbar_cta" href="#">Agendar já!</a>
         </div>
-      </nav>
-    </header>
 
-    <!--Inicio da página inicial, com o main inciando daqui até o footer.-->
+        <p class="hero_description">
+          Sou psicopedagoga e dedico meu trabalho ao desenvolvimento da aprendizagem e ao cuidado com cada indivíduo de
+          forma única e acolhedora. Acredito que aprender vai muito além do ambiente escolar — envolve emoções,
+          experiências, autoestima e confiança.
+        </p>
 
-    <main class="main">
-      <section class="hero" id="hero">
-        <div class="hero_content">
-          <div class="hero_intro">
-            <p>Olá, <span>eu sou...</span></p>
+        <div class="hero_features">
+          <div class="feature_card">
+            <div class="feature_icon">
+              <img src="imagens/heart.png" alt="" />
+            </div>
+            <div class="feature_content">
+              <h4>Acolhimento</h4>
+              <p>Escuta ativa em cada etapa</p>
+            </div>
+            <div class="feature-line"></div>
           </div>
 
-          <div class="hero_heading">
-            <h1 class="hero_title typing">Pedagoga Infantil</h1>
+          <div class="feature_card">
+            <div class="feature_icon">
+              <img src="imagens/Brains.png" alt="" />
+            </div>
+            <div class="feature_content">
+              <h4>Análise</h4>
+              <p>Acompanhamento individual</p>
+            </div>
+            <div class="feature-line"></div>
+          </div>
 
-            <div class="hero_subtitle">
-              <p>Educação infantil, fundamental, EJA, gestão escolar.</p>
+          <div class="feature_card">
+            <div class="feature_icon">
+              <img src="imagens/book.png" alt="" />
+            </div>
+            <div class="feature_content">
+              <h4>Inclusão</h4>
+              <p>Respeito às individualidades</p>
+            </div>
+            <div class="feature-line"></div>
+          </div>
+
+          <div class="feature_card">
+            <div class="feature_icon">
+              <img src="imagens/star.png" alt="" />
+            </div>
+            <div class="feature_content">
+              <h4>Resultados</h4>
+              <p>Educação que gera impacto</p>
             </div>
           </div>
+        </div>
 
-          <p class="hero_description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur blanditiis reprehenderit corrupti excepturi temporibus
-            cumque optio quod earum doloremque, aut esse expedita odit molestias
-            quam aliquid? Quam maxime deleniti sint?
+        <div class="social_links">
+          <button class="social_button">
+            <img src="imagens/reddit.png" alt="Reddit" />
+          </button>
+
+          <button class="social_button">
+            <img src="imagens/twitter.png" alt="Twitter" />
+          </button>
+
+          <button class="social_button">
+            <img src="imagens/insta.png" alt="Instagram" />
+          </button>
+
+          <button class="social_button">
+            <img src="imagens/whatsapp.png" alt="WhatsApp" />
+          </button>
+        </div>
+
+        <div class="hero_actions">
+          <a href="">SOBRE MIM</a>
+          <a href="">FEEDBACKS</a>
+        </div>
+      </div>
+
+      <div class="hero_image">
+        <img src="imagens/pedagoga.jpeg" alt="pedagoga" />
+      </div>
+    </section>
+
+    <hr class="separtion-line" />
+
+    <section id="about-me">
+      <div class="about-me-container">
+        <div class="about-me-heading">
+          <span class="section-tag">SOBRE MIM</span>
+          <h1>Educar é transformar vidas e construir futuros.</h1>
+          <div class="line"></div>
+          <p>
+            Sou pedagoga com atuação dedicada à educação infantil, ensino
+            fundamental, EJA e gestão escolar.
           </p>
-
-          <div class="hero_features">
-
-            <div class="feature_card">
-              <div class="feature_icon">
-                <img src="imagens/heart.png" alt="" />
-              </div>
-              <div class="feature_content">
-                <h4>Acolhimento</h4>
-                <p>Escuta ativa em cada etapa</p>
-              </div>
-              <div class="feature-line"></div>
+          <p>
+            Acredito em uma educação humanizada, inclusiva e transformadora,
+            que respeita o tempo e o potencial de cada indivíduo.
+          </p>
+          <div class="mission-card">
+            <div class="mission-icon">
+              <img src="" alt="Ícone missão" />
             </div>
-
-            <div class="feature_card">
-              <div class="feature_icon">
-                <img src="imagens/Brains.png" alt="" />
-              </div>
-              <div class="feature_content">
-                <h4>Análise</h4>
-                <p>Acompanhamento individual</p>
-              </div>
-              <div class="feature-line"></div>
-            </div>
-
-
-            <div class="feature_card">
-              <div class="feature_icon">
-                <img src="imagens/book.png" alt="" />
-              </div>
-              <div class="feature_content">
-                <h4>Inclusão</h4>
-                <p>Respeito às individualidades</p>
-              </div>
-              <div class="feature-line"></div>
-            </div>
-
-            <div class="feature_card">
-              <div class="feature_icon">
-                <img src="imagens/star.png" alt="" />
-              </div>
-              <div class="feature_content">
-                <h4>Resultados</h4>
-                <p>Educação que gera impacto</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="social_links">
-            <button class="social_button">
-              <img src="imagens/reddit.png" alt="Reddit" />
-            </button>
-
-            <button class="social_button">
-              <img src="imagens/twitter.png" alt="Twitter" />
-            </button>
-
-            <button class="social_button">
-              <img src="imagens/insta.png" alt="Instagram" />
-            </button>
-
-            <button class="social_button">
-              <img src="imagens/whatsapp.png" alt="WhatsApp" />
-            </button>
-          </div>
-
-          <div class="hero_actions">
-            <a href="">SOBRE MIM</a>
-            <a href="">FEEDBACKS</a>
-          </div>
-        </div>
-
-        <div class="hero_image">
-          <img src="imagens/pedagoga.jpeg" alt="pedagoga" />
-        </div>
-      </section>
-
-      <hr class="separtion-line">
-
-      <section id="about-me">
-        <div class="about-me-container">
-          <div class="about-me-heading">
-
-            <span class="section-tag">SOBRE MIM</span>
-            <h1>Educar é transformar vidas e construir futuros.</h1>
-            <div class="line"></div>
-            <p>
-              Sou pedagoga com atuação dedicada à educação infantil, ensino
-              fundamental, EJA e gestão escolar.
-            </p>
-            <p>
-              Acredito em uma educação humanizada, inclusiva e transformadora,
-              que respeita o tempo e o potencial de cada indivíduo.
-            </p>
-            <div class="mission-card">
-              <div class="mission-icon">
-                <img src="" alt="Ícone missão" />
-              </div>
-              <div class="mission-text">
-                <h3>Minha missão</h3>
-                <p>
-                  Promover aprendizagens significativas que incentivem
-                  autonomia, empatia e cidadania.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="principles-container">
-            <span class="section-tag"> MEUS PRINCÍPIOS </span>
-
-            <div class="principle-item">
-              <img src="imagens/page2-heart.png" alt="Ícone respeito" />
-              <div>
-                <h3>Respeito</h3>
-                <p>
-                  Acolho cada indivíduo em sua história, tempo e singularidade.
-                </p>
-              </div>
-            </div>
-
-            <div class="principle-item">
-              <img src="imagens/quebracabeças.png" alt="Ícone aprendizagem" />
-              <div>
-                <h3>Aprendizagem</h3>
-                <p>
-                  Estímulo o conhecimento de forma significativa e humanizada.
-                </p>
-              </div>
-            </div>
-
-            <div class="principle-item">
-              <img src="imagens/empatia.png" alt="Ícone empatia" />
-              <div>
-                <h3>Empatia</h3>
-                <p>Promovo relações de cuidado, escuta e compreensão para todos.</p>
-              </div>
-            </div>
-
-            <div class="principle-item">
-              <img src="imagens/transformação.png" alt="Ícone transformação" />
-              <div>
-                <h3>Transformação</h3>
-                <p>Acredito na educação como ferramenta de mudança social.</p>
-              </div>
+            <div class="mission-text">
+              <h3>Minha missão</h3>
+              <p>
+                Promover aprendizagens significativas que incentivem
+                autonomia, empatia e cidadania.
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      <hr class="separtion-line">
+        <div class="principles-container">
+          <span class="section-tag"> MEUS PRINCÍPIOS </span>
 
-      <section class="page-3-section" id="page-3-container">
-        <div class="page-3-title">
-          <p>Meus <span>projetos</span></p>
+          <div class="principle-item">
+            <img src="imagens/page2-heart.png" alt="Ícone respeito" />
+            <div>
+              <h3>Respeito</h3>
+              <p>
+                Acolho cada indivíduo em sua história, tempo e singularidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <img src="imagens/quebracabeças.png" alt="Ícone aprendizagem" />
+            <div>
+              <h3>Aprendizagem</h3>
+              <p>
+                Estímulo o conhecimento de forma significativa e humanizada.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <img src="imagens/empatia.png" alt="Ícone empatia" />
+            <div>
+              <h3>Empatia</h3>
+              <p>
+                Promovo relações de cuidado, escuta e compreensão para todos.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <img src="imagens/transformação.png" alt="Ícone transformação" />
+            <div>
+              <h3>Transformação</h3>
+              <p>Acredito na educação como ferramenta de mudança social.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="separtion-line" />
+
+    <section class="works" id="works">
+      <div class="works-header">
+        <div class="works-brand">
+          <div class="brand-line"></div>
+          <div class="brand-icon">❤</div>
+          <div class="brand-line"></div>
+        </div>
+        <h1 class="works-heading">Áreas de Atuação</h1>
+        <p class="works-intro">
+          Soluções personalizadas para promover o desenvolvimento e o
+          aprendizado de crianças, jovens e famílias.
+        </p>
+      </div>
+
+      <div class="works-projects">
+        <div class="projects-cards">
+          <div class="card-image card-yellow">
+            <img src="imagens/pedagoga23.png" alt="" />
+          </div>
+          <h1>Reforço Escolar</h1>
+          <p>
+            Acompanhamento individual para crianças com dificuldades em
+            leitura, escrita e interpretação.
+          </p>
+          <div class="card-button">
+            <button>Saiba mais →</button>
+          </div>
         </div>
 
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Reforço Escolar</h3>
-            <p>
-              Acompanhamento individual para crianças com dificuldades em
-              leitura, escrita e interpretação.
-            </p>
+        <div class="projects-cards">
+          <div class="card-image card-pink">
+            <img src="imagens/laudo.png" alt="" />
           </div>
-
-          <div class="project-card">
-            <h3>Laudos Psicopedagógicos</h3>
-            <p>
-              Avaliações detalhadas para identificação de dificuldades de
-              aprendizagem.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Orientação Familiar</h3>
-            <p>
-              Apoio aos pais no desenvolvimento educacional e emocional dos
-              filhos.
-            </p>
+          <h1>Laudos Psicopedagógicos</h1>
+          <p>
+            Avaliações detalhadas para identificação de dificuldades de
+            aprendizagem.
+          </p>
+          <div class="card-button">
+            <button>Saiba mais →</button>
           </div>
         </div>
-      </section>
 
-      <hr class="separtion-line">
-
-      <section id="feedbacks" class="feedback-section">
-        <h2>Feedbacks</h2>
-
-        <div class="feedback-grid">
-          <div class="feedback-card">
-            <p>"Profissional excelente, meu filho evoluiu muito."</p>
-            <span>- Maria S.</span>
+        <div class="projects-cards">
+          <div class="card-image card-purple">
+            <img src="imagens/family.png" alt="" />
           </div>
+          <h1>Orientação Familiar</h1>
+          <p>
+            Apoio aos pais no desenvolvimento educacional e emocional dos
+            filhos.
+          </p>
+          <div class="card-button">
+            <button>Saiba mais →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <div class="works-footer">
+        <div class="footer-cards">
+          <div class="footer-icon">
+            <img src="imagens/heart-2.png" alt="" />
+          </div>
+
+          <div>
+            <h3>Atendimento Humanizado</h3>
+            <p>Cada pessoa é única e merece ser compreendida.</p>
+          </div>
+        </div>
+
+        <div class="footer-cards">
+          <div class="footer-icon">
+            <img src="imagens/medal-2.png"" />
+            </div>
+            <div>
+              <h3>Experiência e Qualificação</h3>
+              <p>Formação contínua e práticas baseadas em evidências.</p>
+            </div>
+          </div>
+
+          <div class=" footer-cards">
+            <div class="footer-icon">
+              <img src="imagens/target.png" alt="" />
+            </div>
+            <div>
+              <h3>Resultados Reais</h3>
+              <p>Planos personalizados para promover progresso consistente.</p>
+            </div>
+          </div>
+
+          <div class="footer-cards">
+            <div class="footer-icon">
+              <img src="imagens/lock.png" alt="" />
+            </div>
+            <div>
+              <h3>Ambiente Seguro</h3>
+              <p>Confiança e acolhimento para aprender e se desenvolver.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <hr class="separtion-line" />
+
+    <section id="feedbacks" class="feedback-section">
+
+      <div class="feedback-heading">
+        <h1 class="feedback-title">
+          Feedbacks de quem já transformou a aprendizagem com meu apoio
+        </h1>
+        <div class="brand-line"></div>
+        <p class="feedback-intro">
+          Veja o que famílias e alunos dizem sobre essa jornada de desenvolvimento, acolhimento e conquistas.
+        </p>
+      </div>
+
+      <div class="carousel-wrapper">
+
+        <div class="setas seta-esquerda">
+          <img src="imagens/seta-red.png" alt="">
+        </div>
+
+        <div class="feedback-cards-container">
 
           <div class="feedback-card">
-            <p>"Atendimento humanizado e muito atencioso."</p>
-            <span>- João P.</span>
+            <div class="card-informations">
+              <div class="card-person">
+                <img src="imagens/pessoa1.png" alt="">
+              </div>
+              <div class="card-name">
+                <h3>Beatriz Costa</h3>
+                <div class="where-it-from">
+                  <img src="imagens/google.png" alt="">
+                  <p>Feedback feito no google</p>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <p class="card-comentary">
+              O acompanhamento foi essencial para o desenvolvimento do meu filho.
+              Hoje ele se sente mais confiante e motivado nos estudos.
+            </p>
+            <div class="card-timer">
+              <time datetime="2026-05-01">
+                Há 2 semanas
+              </time>
+            </div>
           </div>
 
           <div class="feedback-card">
-            <p>"Recomendo para qualquer família."</p>
-            <span>- Ana C.</span>
+            <div class="card-informations">
+              <div class="card-person">
+                <img src="imagens/pessoa2.png" alt="">
+              </div>
+              <div class="card-name">
+                <h3>Pedro Gaia</h3>
+                <div class="where-it-from">
+                  <img src="imagens/google.png" alt="">
+                  <p>Feedback feito no google</p>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <p class="card-comentary">
+              Atendimento extremamente acolhedor e profissional.
+              Percebemos melhora no aprendizado e também na autoestima.
+            </p>
+            <div class="card-timer">
+              <time datetime="2026-05-01">
+                Há 2 semanas
+              </time>
+            </div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="card-informations">
+              <div class="card-person">
+                <img src="imagens/pessoa3.png" alt="">
+              </div>
+              <div class="card-name">
+                <h3>Ludmila alves</h3>
+                <div class="where-it-from">
+                  <img src="imagens/google.png" alt="">
+                  <p>Feedback feito no google</p>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <p class="card-comentary">
+              Excelente acompanhamento psicopedagógico.
+              O cuidado com cada detalhe faz toda diferença no processo.
+            </p>
+             <div class="card-timer">
+              <time datetime="2026-05-01">
+                Há 2 semanas
+              </time>
+            </div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="card-informations">
+              <div class="card-person">
+                <img src="imagens/pessoa4.png" alt="">
+              </div>
+              <div class="card-name">
+                <h3>Gustavo brito</h3>
+                <div class="where-it-from">
+                  <img src="imagens/google.png" alt="">
+                  <p>Feedback feito no google</p>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <p class="card-comentary">
+              Desde o início fomos recebidos com muito carinho e atenção.
+              Recomendo pelo profissionalismo e dedicação.
+            </p>
+            <div class="card-timer">
+              <time datetime="2026-05-01">
+                Há 2 semanas
+              </time>
+            </div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="card-informations">
+              <div class="card-person">
+                <img src="imagens/pessoa5.png" alt="">
+              </div>
+              <div class="card-name">
+                <h3>Ana clara</h3>
+                <div class="where-it-from">
+                  <img src="imagens/google.png" alt="">
+                  <p>Feedback feito no google</p>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <p class="card-comentary">
+              Excelente acompanhamento psicopedagógico.
+              O cuidado com cada detalhe faz toda diferença no processo.
+            </p>
+             <div class="card-timer">
+              <time datetime="2026-05-01">
+                Há 2 semanas
+              </time>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section id="contato" class="contact-section">
-        <h2>Entre em contato</h2>
-        <p>Agende uma consulta ou tire dúvidas diretamente pelo WhatsApp.</p>
-        <a href="#" class="contact-btn">Chamar no WhatsApp</a>
-      </section>
-    </main>
+        <div class="setas seta-direita">
+          <img src="imagens/seta.png" alt="">
+        </div>
 
-    <hr class="separtion-line">
+      </div>
 
-    <footer>
-      <p>© 2026 Lidiane Psicopedagoga • Todos os direitos reservados</p>
-    </footer>
-    <script src="javascript.js"></script>
-  </body>
+
+      <div class="line-cards">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </section>
+
+
+
+    <section id="contato" class="contact-section">
+
+
+
+    </section>
+  </main>
+
+  <hr class="separtion-line" />
+
+  <footer>
+    <p>© 2026 Lidiane Psicopedagoga • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+
 </html>
