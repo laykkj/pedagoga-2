@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lidiane Pedagoga</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <header class="header">
     <nav class="navbar">
       <div class="navbar_brand">
@@ -20,7 +23,7 @@
           <a href="#about-me">sobre mim</a>
           <a href="#works" class="">trabalhos</a>
           <a href="#feedbacks" class="">feedbacks</a>
-          <a href="#Contact" class="">contatos</a>
+          <a href="#contact" class="">contatos</a>
         </div>
         <a class="navbar_cta" href="#">Agendar já!</a>
       </div>
@@ -94,25 +97,18 @@
 
         <div class="social_links">
           <button class="social_button">
-            <img src="imagens/reddit.png" alt="Reddit" />
+            <i class="ph ph-instagram-logo"></i>
           </button>
 
           <button class="social_button">
-            <img src="imagens/twitter.png" alt="Twitter" />
+            <i class="ph ph-whatsapp-logo"></i>
           </button>
 
-          <button class="social_button">
-            <img src="imagens/insta.png" alt="Instagram" />
-          </button>
-
-          <button class="social_button">
-            <img src="imagens/whatsapp.png" alt="WhatsApp" />
-          </button>
         </div>
 
         <div class="hero_actions">
-          <a href="">SOBRE MIM</a>
-          <a href="">FEEDBACKS</a>
+          <a href="#about-me">SOBRE MIM</a>
+          <a href="#feedbacks">FEEDBACKS</a>
         </div>
       </div>
 
@@ -149,46 +145,57 @@
               </p>
             </div>
           </div>
+
         </div>
+
+
 
         <div class="principles-container">
           <span class="section-tag"> MEUS PRINCÍPIOS </span>
+          <div class="principle-item-grid">
+            <div class="principle-item">
 
-          <div class="principle-item">
-            <img src="imagens/page2-heart.png" alt="Ícone respeito" />
-            <div>
-              <h3>Respeito</h3>
-              <p>
-                Acolho cada indivíduo em sua história, tempo e singularidade.
-              </p>
+              <i class="ph ph-hand-heart"></i>
+              <div class="principle-item-text">
+                <h3>Respeito</h3>
+                <div class="brand-line"></div>
+                <p>
+                  Acolho cada indivíduo em sua história, tempo e singularidade.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="principle-item">
-            <img src="imagens/quebracabeças.png" alt="Ícone aprendizagem" />
-            <div>
-              <h3>Aprendizagem</h3>
-              <p>
-                Estímulo o conhecimento de forma significativa e humanizada.
-              </p>
+            <div class="principle-item">
+              <i class="ph ph-brain"></i>
+              <div class="principle-item-text">
+                <h3>Aprendizagem</h3>
+                <div class="brand-line"></div>
+                <p>
+                  Estímulo o conhecimento de forma significativa e humanizada.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="principle-item">
-            <img src="imagens/empatia.png" alt="Ícone empatia" />
-            <div>
-              <h3>Empatia</h3>
-              <p>
-                Promovo relações de cuidado, escuta e compreensão para todos.
-              </p>
+            <div class="principle-item">
+              <i class="ph ph-heartbeat"></i>
+              <div class="principle-item-text">
+                <h3>Empatia</h3>
+                <div class="brand-line"></div>
+                <p>
+                  Promovo relações de cuidado, escuta e compreensão para todos.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="principle-item">
-            <img src="imagens/transformação.png" alt="Ícone transformação" />
-            <div>
-              <h3>Transformação</h3>
-              <p>Acredito na educação como ferramenta de mudança social.</p>
+            <div class="principle-item">
+
+              <i class="ph ph-shooting-star"></i>
+
+              <div class="principle-item-text">
+                <h3>Transformação</h3>
+                <div class="brand-line"></div>
+                <p>Acredito na educação como ferramenta de mudança social.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -271,34 +278,34 @@
 
         <div class="footer-cards">
           <div class="footer-icon">
-            <img src="imagens/medal-2.png"/>
-            </div>
-            <div>
-              <h3>Experiência e Qualificação</h3>
-              <p>Formação contínua e práticas baseadas em evidências.</p>
-            </div>
+            <img src="imagens/medal-2.png" />
           </div>
-
-          <div class=" footer-cards">
-            <div class="footer-icon">
-              <img src="imagens/target.png" alt="" />
-            </div>
-            <div>
-              <h3>Resultados Reais</h3>
-              <p>Planos personalizados para promover progresso consistente.</p>
-            </div>
-          </div>
-
-          <div class="footer-cards">
-            <div class="footer-icon">
-              <img src="imagens/lock.png" alt="" />
-            </div>
-            <div>
-              <h3>Ambiente Seguro</h3>
-              <p>Confiança e acolhimento para aprender e se desenvolver.</p>
-            </div>
+          <div>
+            <h3>Experiência e Qualificação</h3>
+            <p>Formação contínua e práticas baseadas em evidências.</p>
           </div>
         </div>
+
+        <div class=" footer-cards">
+          <div class="footer-icon">
+            <img src="imagens/target.png" alt="" />
+          </div>
+          <div>
+            <h3>Resultados Reais</h3>
+            <p>Planos personalizados para promover progresso consistente.</p>
+          </div>
+        </div>
+
+        <div class="footer-cards">
+          <div class="footer-icon">
+            <img src="imagens/lock.png" alt="" />
+          </div>
+          <div>
+            <h3>Ambiente Seguro</h3>
+            <p>Confiança e acolhimento para aprender e se desenvolver.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <hr class="separtion-line" />
@@ -317,156 +324,244 @@
 
       <div class="carousel-wrapper">
 
-        <div class="setas seta-esquerda">
-          <img src="imagens/seta-red.png" alt="">
+        <div class="setas seta-esquerda" id="prevBtn">
+          <i class="ph-fill ph-caret-circle-double-left"></i>
         </div>
 
         <div class="feedback-cards-container">
-
-          <div class="feedback-card">
-            <div class="card-informations">
-              <div class="card-person">
-                <img src="imagens/pessoa1.png" alt="">
-              </div>
-              <div class="card-name">
-                <h3>Beatriz Costa</h3>
-                <div class="where-it-from">
-                  <img src="imagens/google.png" alt="">
-                  <p>Feedback feito no google</p>
+          <div class="feedback-tracker" id="carousel">
+            <div class="feedback-card">
+              <div class="card-informations">
+                <div class="card-person">
+                  <img src="imagens/pessoa1.png" alt="">
+                </div>
+                <div class="card-name">
+                  <h3>Beatriz Costa</h3>
+                  <div class="where-it-from">
+                    <img src="imagens/google.png" alt="">
+                    <p>Feedback feito no google</p>
+                  </div>
                 </div>
               </div>
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="card-comentary">
+                O acompanhamento foi essencial para o desenvolvimento do meu filho.
+                Hoje ele se sente mais confiante e motivado nos estudos.
+              </p>
+              <div class="card-timer">
+                <time datetime="2026-05-01">
+                  Há 3 semanas
+                </time>
+              </div>
             </div>
-            <div class="stars">
-              ★★★★★
+
+            <div class="feedback-card">
+              <div class="card-informations">
+                <div class="card-person">
+                  <img src="imagens/pessoa2.png" alt="">
+                </div>
+                <div class="card-name">
+                  <h3>Pedro Gaia</h3>
+                  <div class="where-it-from">
+                    <img src="imagens/google.png" alt="">
+                    <p>Feedback feito no google</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="card-comentary">
+                Atendimento extremamente acolhedor e profissional.
+                Percebemos melhora no aprendizado e também na autoestima.
+              </p>
+              <div class="card-timer">
+                <time datetime="2026-05-01">
+                  Há 2 semanas
+                </time>
+              </div>
             </div>
-            <p class="card-comentary">
-              O acompanhamento foi essencial para o desenvolvimento do meu filho.
-              Hoje ele se sente mais confiante e motivado nos estudos.
-            </p>
-            <div class="card-timer">
-              <time datetime="2026-05-01">
-                Há 2 semanas
-              </time>
+
+            <div class="feedback-card">
+              <div class="card-informations">
+                <div class="card-person">
+                  <img src="imagens/pessoa3.png" alt="">
+                </div>
+                <div class="card-name">
+                  <h3>Ludmila alves</h3>
+                  <div class="where-it-from">
+                    <img src="imagens/google.png" alt="">
+                    <p>Feedback feito no google</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="card-comentary">
+                Excelente acompanhamento psicopedagógico.
+                O cuidado com cada detalhe faz toda diferença no processo.
+              </p>
+              <div class="card-timer">
+                <time datetime="2026-05-01">
+                  Há 3 dias
+                </time>
+              </div>
+            </div>
+
+            <div class="feedback-card">
+              <div class="card-informations">
+                <div class="card-person">
+                  <img src="imagens/pessoa4.png" alt="">
+                </div>
+                <div class="card-name">
+                  <h3>Gustavo brito</h3>
+                  <div class="where-it-from">
+                    <img src="imagens/google.png" alt="">
+                    <p>Feedback feito no google</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="card-comentary">
+                Desde o início fomos recebidos com muito carinho e atenção.
+                Recomendo pelo profissionalismo e dedicação.
+              </p>
+              <div class="card-timer">
+                <time datetime="2026-05-01">
+                  Há 1 dia
+                </time>
+              </div>
+            </div>
+
+            <div class="feedback-card">
+              <div class="card-informations">
+                <div class="card-person">
+                  <img src="imagens/pessoa5.png" alt="">
+                </div>
+                <div class="card-name">
+                  <h3>Ana clara</h3>
+                  <div class="where-it-from">
+                    <img src="imagens/google.png" alt="">
+                    <p>Feedback feito no google</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="card-comentary">
+                Excelente acompanhamento psicopedagógico.
+                O cuidado com cada detalhe faz toda diferença no processo.
+              </p>
+              <div class="card-timer">
+                <time datetime="2026-05-01">
+                  Há 2 semanas
+                </time>
+              </div>
+            </div>
+            
+              <div class="feedback-card">
+                <div class="card-informations">
+                  <div class="card-person">
+                    <img src="imagens/pessoa6.png" alt="">
+                  </div>
+                  <div class="card-name">
+                    <h3>Mariana Souza</h3>
+                    <div class="where-it-from">
+                      <img src="imagens/google.png" alt="">
+                      <p>Feedback feito no google</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stars">★★★★★</div>
+
+                <p class="card-comentary">
+                  Minha filha passou a encarar os estudos com mais tranquilidade.
+                  O acompanhamento foi fundamental para seu desenvolvimento.
+                </p>
+
+                <div class="card-timer">
+                  <time datetime="2026-05-01">
+                    Há 3 semanas
+                  </time>
+                </div>
+              </div>
+
+              <div class="feedback-card">
+                <div class="card-informations">
+                  <div class="card-person">
+                    <img src="imagens/pessoa7.png" alt="">
+                  </div>
+                  <div class="card-name">
+                    <h3>Ricardo Mendes</h3>
+                    <div class="where-it-from">
+                      <img src="imagens/google.png" alt="">
+                      <p>Feedback feito no google</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stars">★★★★★</div>
+
+                <p class="card-comentary">
+                  Atendimento acolhedor e muito profissional.
+                  Percebemos avanços significativos em poucas semanas.
+                </p>
+
+                <div class="card-timer">
+                  <time datetime="2026-05-01">
+                    Há 1 mês
+                  </time>
+                </div>
+              </div>
+
+
+              <div class="feedback-card">
+                <div class="card-informations">
+                  <div class="card-person">
+                    <img src="imagens/pessoa11.png" alt="">
+                  </div>
+                  <div class="card-name">
+                    <h3>Camila Rocha</h3>
+                    <div class="where-it-from">
+                      <img src="imagens/google.png" alt="">
+                      <p>Feedback feito no google</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stars">
+                  ★★★★★
+                </div>
+                <p class="card-comentary">
+                  O trabalho realizado superou nossas expectativas.
+                  Meu filho ganhou mais autonomia, confiança e interesse pelos estudos.
+                </p>
+
+                <div class="card-timer">
+                  <time datetime="2026-05-01">
+                    Há 1 semana
+                  </time>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="feedback-card">
-            <div class="card-informations">
-              <div class="card-person">
-                <img src="imagens/pessoa2.png" alt="">
-              </div>
-              <div class="card-name">
-                <h3>Pedro Gaia</h3>
-                <div class="where-it-from">
-                  <img src="imagens/google.png" alt="">
-                  <p>Feedback feito no google</p>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              ★★★★★
-            </div>
-            <p class="card-comentary">
-              Atendimento extremamente acolhedor e profissional.
-              Percebemos melhora no aprendizado e também na autoestima.
-            </p>
-            <div class="card-timer">
-              <time datetime="2026-05-01">
-                Há 2 semanas
-              </time>
-            </div>
-          </div>
-
-          <div class="feedback-card">
-            <div class="card-informations">
-              <div class="card-person">
-                <img src="imagens/pessoa3.png" alt="">
-              </div>
-              <div class="card-name">
-                <h3>Ludmila alves</h3>
-                <div class="where-it-from">
-                  <img src="imagens/google.png" alt="">
-                  <p>Feedback feito no google</p>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              ★★★★★
-            </div>
-            <p class="card-comentary">
-              Excelente acompanhamento psicopedagógico.
-              O cuidado com cada detalhe faz toda diferença no processo.
-            </p>
-            <div class="card-timer">
-              <time datetime="2026-05-01">
-                Há 2 semanas
-              </time>
-            </div>
-          </div>
-
-          <div class="feedback-card">
-            <div class="card-informations">
-              <div class="card-person">
-                <img src="imagens/pessoa4.png" alt="">
-              </div>
-              <div class="card-name">
-                <h3>Gustavo brito</h3>
-                <div class="where-it-from">
-                  <img src="imagens/google.png" alt="">
-                  <p>Feedback feito no google</p>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              ★★★★★
-            </div>
-            <p class="card-comentary">
-              Desde o início fomos recebidos com muito carinho e atenção.
-              Recomendo pelo profissionalismo e dedicação.
-            </p>
-            <div class="card-timer">
-              <time datetime="2026-05-01">
-                Há 2 semanas
-              </time>
-            </div>
-          </div>
-
-          <div class="feedback-card">
-            <div class="card-informations">
-              <div class="card-person">
-                <img src="imagens/pessoa5.png" alt="">
-              </div>
-              <div class="card-name">
-                <h3>Ana clara</h3>
-                <div class="where-it-from">
-                  <img src="imagens/google.png" alt="">
-                  <p>Feedback feito no google</p>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              ★★★★★
-            </div>
-            <p class="card-comentary">
-              Excelente acompanhamento psicopedagógico.
-              O cuidado com cada detalhe faz toda diferença no processo.
-            </p>
-            <div class="card-timer">
-              <time datetime="2026-05-01">
-                Há 2 semanas
-              </time>
-            </div>
-          </div>
+          <div class="setas seta-direita" id="nextBtn">
+          <i class="ph-fill ph-caret-circle-double-right"></i>
         </div>
 
-        <div class="setas seta-direita">
-          <img src="imagens/seta.png" alt="">
-        </div>
-
-      </div>
+       </div>
+     </div>
 
 
-      <div class="line-cards">
+      <div class="line-cards" id="dots">
         <div></div>
         <div></div>
         <div></div>
@@ -478,57 +573,63 @@
 
     <hr class="separtion-line">
 
-    <section class="contact-section" id="Contact">
+    <!-- contact section -->
+
+    <section class="contact-section" id="contact">
+
       <div class="contact-container">
 
         <div class="contact-content">
 
           <span class="contact-tag">
-            💬 VAMOS CONVERSAR?
+            💬 Vamos conversar?
           </span>
 
           <h1>
-            Entre em contato!
+            Entre em
+            <span>contato!</span>
           </h1>
 
+          <div class="contact-line"></div>
+
           <p>
-            Tem alguma dúvida, quer saber mais sobre meu trabalho
-            ou deseja agendar um atendimento?
-            Preencha seus dados e entrarei em contato com você!
+            Tem alguma dúvida, quer saber mais sobre meu trabalho ou deseja
+            agendar um atendimento? Preencha seus dados e entrarei em
+            contato com você!
           </p>
 
-          <a href="contact-site/index.php" class="contact-button">
-            Entrar em contato
-            <span>➜</span>
-          </a>
+          <div class="contact-cards">
 
-          <div class="contact-benefits">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
 
-            <div class="benefit-item">
-              <img src="imagens/shield.png" alt="">
-              <div>
-                <h4>Seus dados</h4>
-                <p>100% seguros</p>
+              <div class="contact-info-text">
+                <h3>Seus dados protegidos</h3>
+                <p>100% seguros e confidenciais</p>
               </div>
             </div>
 
-            <div class="benefit-line"></div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
 
-            <div class="benefit-item">
-              <img src="imagens/atendimento.png" alt="">
-              <div>
-                <h4>Retorno rápido</h4>
-                <p>e personalizado</p>
+              <div class="contact-info-text">
+                <h3>Retorno rápido</h3>
+                <p>Atendimento ágil e personalizado</p>
               </div>
             </div>
 
-            <div class="benefit-line"></div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
 
-            <div class="benefit-item">
-              <img src="imagens/timer.png" alt="">
-              <div>
-                <h4>Atendimento</h4>
-                <p>humanizado</p>
+              <div class="contact-info-text">
+                <h3>Atendimento humanizado</h3>
+                <p>Acolhimento e escuta em cada etapa</p>
               </div>
             </div>
 
@@ -536,21 +637,116 @@
 
         </div>
 
-        <div class="contact-image">
-          <img src="background/lidiane2.png">
-        </div>
+        <div class="contact-form-wrapper">
 
+          <div class="contact-form-header">
+
+            <div class="contact-form-icon">
+              <i class="fa-solid fa-comment-dots"></i>
+            </div>
+
+            <div>
+              <h2>Envie sua mensagem</h2>
+              <p>Preencha o formulário abaixo para falar comigo.</p>
+            </div>
+
+          </div>
+
+<form class="contact-form" id="whatsapp-form">
+
+  <div class="contact-grid">
+
+    <div class="input-group">
+      <label>Nome completo</label>
+      <input id="nome" type="text" placeholder="Seu nome completo">
+    </div>
+
+    <div class="input-group">
+      <label>WhatsApp</label>
+      <input id="telefone" type="text" placeholder="(00) 00000-0000">
+    </div>
+
+  </div>
+
+  <div class="input-group">
+    <label>Assunto</label>
+
+    <select id="assunto">
+      <option>Selecione o assunto</option>
+      <option>Atendimento</option>
+      <option>Dúvidas</option>
+      <option>Agendamento</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>Mensagem</label>
+
+    <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+  </div>
+
+  <button type="submit" class="contact-button">
+    <i class="fa-brands fa-whatsapp"></i>
+    Enviar mensagem no WhatsApp
+  </button>
+
+</form>
+
+        </div>
       </div>
 
     </section>
 
-  </main>
+    <!-- FOOTER -->
 
-  <footer>
-    <p>© 2026 Lidiane Psicopedagoga • Todos os direitos reservados</p>
-  </footer>
+    <footer class="footer">
 
-  <script src="javascript.js"></script>
+      <div class="footer-container">
+
+        <div class="footer-column">
+          <h2>Psicopedagoga</h2>
+
+          <p>
+            Educação infantil, fundamental,
+            EJA, gestão escolar e desenvolvimento
+            de potencialidades.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Navegação</h3>
+
+          <a href="#">Sobre Mim</a>
+          <a href="#">Trabalhos</a>
+          <a href="#">Feedbacks</a>
+          <a href="#">Contatos</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contato</h3>
+
+          <p><i class="ri-whatsapp-line"></i> (99) 99999-9999</p>
+          <p><i class="ri-mail-line"></i> seu@email.com</p>
+          <p><i class="ri-map-pin-line"></i> Sua cidade - UF</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Redes sociais</h3>
+
+          <div class="footer-socials">
+            <a href="#"><i class="ri-instagram-line"></i> <img src="imagens/contactzap.png" alt=""></a>
+            <a href="#"><i class="ri-whatsapp-line"></i> <img src="imagens/instacontact.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Lidiane Psicopedagoga • Todos os direitos reservados
+      </div>
+
+    </footer>
+
+    <script src="javascript.js"></script>
 </body>
 
 </html>
